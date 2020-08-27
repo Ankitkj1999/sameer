@@ -1,0 +1,54 @@
+{
+    "short_name": "S.G.",
+    "name": "S.G. Decor",
+    "description": "laminates Store",
+    "lang": "en-US",
+    "categories": ["shop", "homedecor", "business"],
+    "icons": [
+      {
+        "src": "images/icon-74.png",
+        "sizes": "74x74"
+      },
+      {
+        "src": "images/icon-96.png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "images/icon-128.png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "images/icon-144.png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "images/icon-150.png",
+        "sizes": "150x150"
+      },
+      {
+        "src": "images/icon-180.png",
+        "sizes": "180x180"
+      },
+  
+      {
+        "src": "images/icon-192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/icon-384.png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "images/icon-512.png",
+        "sizes": "512x512"
+      }
+   
+    ],
+    "start_url": "/",
+    "background_color": "#ffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#f44336"
+    
+  }
+  

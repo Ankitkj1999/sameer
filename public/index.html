@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>S.G. Decoratives</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/ico.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
+
+<!--mobile icons-->
+<link rel='shortcut icon' type='image/x-icon' href="images/icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png" />
+<link rel="apple-touch-icon" sizes="74x74" href="images/icon-74.png" />
+<link rel="apple-touch-icon" sizes="96x96" href="images/icon-96.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="images/icon-128.png" />
+<link rel="apple-touch-icon" sizes="384x384" href="images/icon-384.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="images/icon-512.png" />
+<meta name="apple-mobile-web-app-status-bar" content="#f44336">
+<link rel="icon" type="image/png" href="images/icon.png" />
+
+<meta property="og:image" content="https://i.ibb.co/SJLqx0D/icon.pngs">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta name="theme-color" content="#f44336">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+<style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+/*---Removes the scrollbar but the functionality is there---*/
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+#more {display: none;}
+
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:36.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background:#ffffff;
+}
+
+.progress-bar {
+  height: 8px;
+  background:white;
+  width: 0%;
+}
+
+
+a.example {
+  
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  a.example {
+    display: none;
+  }
+}
+
+
+
+
+/*mob nav*/
+@media screen and (min-width: 430px) {
+  div.navbar {
+    display: none;
+  }
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 5%;
+
+}
+
+
+
+
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+
+}
+.btn-group button {
+  background-color: #fdfdfd; /* Green background */
+  border: 1px solid rgb(255, 255, 255); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  <!--  <h3 class="w3-padding-64"> S.G.<br>Decoratives</b></h3>-->
+    <h3 class="w3-padding-64" style="font: 400 90px/0.8 'Great Vibes';  font-family: 'Great Vibes', cursive;    margin-bottom: 20px;padding:0;cursor:default">S.G.<br><a style="font: 300 45px/0.8 'Great Vibes';cursor:default;font-family: 'Great Vibes', cursive;      ">Decoratives</a></h3>
+    
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight: normal;">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"  style="font-weight: normal;">Showcase</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"  style="font-weight: normal;">About</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"  style="font-weight: normal;">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"  style="font-weight: normal;">Designs</a> 
+    <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"  style="font-weight: normal;">FAQ</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="font-weight: normal;">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding" style="padding-top: 200px;">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" style="margin-right: 20px;" onclick="w3_open()">☰</a>
+  <span style="font: 400 37px/0.8; cursor:default; padding-top:20px; justify-content:center;font-family: 'Great Vibes', cursive;  align-content:center">S.G. Decoratives</span>
+</header>
+<div class="progress-container" style="position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+background-color:#f44336;">
+  <div class="progress-bar" id="myBar"></div>
+</div>  
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo" style="margin-bottom: 0;font-size:30px" ><a style="font-size: 50px;">Home Decor</a></h1>
+    <h2 style="margin-top:-10px;">& Laminates</h2>
+    <h1 class="w3-xxxlarge w3-text-red"> Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/3.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="images/33.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="images/2.jpg" style="width:100%" onclick="onClick(this)" >
+    </div>
+
+    <div class="w3-half">
+      <img src="images/15.jpeg" style="width:100%" onclick="onClick(this)" >
+      <img src="images/21.jpeg" style="width:100%" onclick="onClick(this)" >
+      <img src="images/11.jpeg" style="width:100%" onclick="onClick(this)" >
+    </div>
+    
+  </div>
+
+  
+  <span id="dots"></span><span id="more"> <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/5.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="images/13.jpeg" style="width:100%" onclick="onClick(this)" >
+    </div>
+
+    <div class="w3-half">
+      <img src="images/212.jpg" style="width:100%" onclick="onClick(this)" >
+      <img src="images/12.jpeg" style="width:100%" onclick="onClick(this)">
+    </div>
+    
+  </div> </span>
+    <br>
+<p style="text-align: center; cursor:pointer;color:#f44336; justify-content:center; align-content:center"><a onclick="myFunction()" id="myBtn">Show More *</a></p>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <div class="w3-container" style="margin-top:75px" id="about">
+    <h1 class="w3-xxxlarge w3-text-red"> About The Company.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>
+
+      S.G. Decoratives was inaugurated on 25 Jan 2015, by my father & on the same day in  1971, Himachal Pradesh became 18th Indian state. And just for a fact Himachal Pradesh currently is the largest laminated producing state in India. Now i continue his legacy with my perseverance and dedication toward my work. Quality Products and Customer Satisfaction has always been on top of our checklist while doing business, and in doing so we have received great appreciation from our clients. A large part of our customer base comes from mouth-to-mouth publicity done by our past customers. At S.G. Decoratives you'll not find laminates and home decor products but you will get enriched with the aspiration for beauty.</p>
+
+<br>
+        <p style="text-align:center" >Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <img src="images/certificate.png" height="95px" width="100px">
+        <p class="w3-large">Best Quality</p>
+        <p>Quality of products is something you can always be assured of while buying from S.G. Decoratives.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="images/mad.png" height="80px" width="150px" style="margin-bottom: 10px;">
+        <p class="w3-large">Made In India</p>
+        <p>All our products are made in India and made for India. Which makes them much economical and effective.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="images/isi.png" height="80px" width="100px"  style="margin-bottom: 10px;">
+        <p class="w3-large">ISI Certified</p>
+        <p>Again quailty is not something we compromise on, thats why all our prosucts are as per ISI specifications.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="images/eco-friendly.png" height="95px" width="100px">
+        <p class="w3-large">Eco Friendly</p>
+        <p>Being responsible citizens, enviroment is of great importance to us. We sell eco-friendly products.</p>
+      </div>
+    </div>
+    </div>
+  
+
+
+
+
+
+
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red">Product & Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are laminates & veneer distributors and wholesalers that focus on what's best for your home and what's best for you!</p>
+
+    <p>We deal in interior and exterior design products for residential, commercial and industrial uses. Laminates and Veneers are our specialities.
+      At S.G. Decoratives we have brands that are trustworthy, competent and above all deliver best in class quality. Some of those brands are Virgo Lam, Marvin and Jeneth.</p>  </div>
+  
+<!-- The Team -->
+<div class="w3-row-padding ">
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="images/a1.jpg" alt="John" style="width:100%">
+      <div class="w3-container">
+        <h3>Virgo</h3>
+        <p class="w3-opacity">Laminates</p>
+        <p>Customer-focused and globally competitive, Corby gives you a canvas of choice in laminates. So that you get to pick from advanced technology and continuous innovation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="images/a2.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container">
+        <h3>Jeneth</h3>
+        <p class="w3-opacity">Laminates</p>
+        <p>Strong personality. Solid colors. Stunning textures. Croma creates wonderful memories in spaces by offering trend-setters to classics in Decorative Laminates.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="images/a3.jpg" alt="Mike" style="width:100%">
+      <div class="w3-container">
+        <h3>Amazing</h3>
+        <p class="w3-opacity">Vineer</p>
+        <p>Celebrating ideas and dreams,The Amazing Virgo Mica gives you the platform to deliver excellence and innovation in designs, colors, textures and pattern.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"> Designs.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>At S.G. Decoratives, we bring together functionality and aesthetics to provide owners with customised and efficient  designs.
+       Our products specialise in home interior designs and home décor, and help you create a personalised home to suit your lifestyle.
+         All our products come with a 5-year warranty along with unwavering support and maintenance services.
+    </p>
+    <p> Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  
+  <!-- The Team -->
+  <div class="w3-row-padding ">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/h1.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Residential</h3>
+          <p class="w3-opacity">Aesthetic</p>
+          <p>With the widest possible range of vineers and laminates, design your home to be have an aesthetic feel.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/c1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Corporate</h3>
+          <p class="w3-opacity">Conducive</p>
+          <p>Desing your business places and offices with lanminates conducive for the working environment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/i2.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Industrial</h3>
+          <p class="w3-opacity">Durable</p>
+          <p>Vineers and laminated which can last for years on end without loosing their shine are best for industries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="w3-container" style="margin-top:75px" id="faq">
+    <h1 class="w3-xxxlarge w3-text-red"> FAQ.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align"> <b>Q.</b> What is difference between Laminates (Sunmica) and Vineer ?</button>
+<div id="Demo1" class="w3-hide">
+<div class="w3-container">
+  <p><b>Laminate:</b> An artificial material, you make laminate by pressing together thin layers of flat paper and plastic resins. A decorative pattern or colour print makes for the upper layer.<br>
+
+   <b> Veneer:</b> Veneer is technically a thin layer of hardwood which is stuck with adhesive, to a surface hidden below.</p>
+</div>
+</div>
+<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align"><b>Q.</b> Which Is having more variety Laminates or Vineer ?</button>
+<div id="Demo2" class="w3-hide">
+<div class="w3-container">
+ <b> Veneer:</b> There are few types of veneers, each serving a particular purpose. You can classify veneers into raw, paper backed, phenolic backed, laid up, reconstituted veneer and wood on wood. Since it is a natural material, veneer is available in a limited number of shades.<br>
+
+<b>Laminate:</b> Available in numerous colors and shades, these can be broadly classified into textured, high gloss, soft and matte.  Textured laminates replicate the feel of materials like wood or stone. One can use high gloss and matte laminates according to one’s personal style.
+</div>
+</div>
+<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align"><b>Q.</b> Which one is more suitable for aesthitic design Laminates or Vineer ?</button>
+<div id="Demo3" class="w3-hide">
+<div class="w3-container">
+  <p> <b>Laminate:</b> Laminates are available in a variety of colors and designs. But they are mass produce so they lack uniqueness in appearance.<br>
+
+    <b>Veneer:</b> Since veneers are wood-make, they maintain the elegance and grace of their parent material. Unlike laminates, each veneer is distinctive adding a unique and rich feel to furniture.</p>
+ 
+</div>
+</div>
+  </div>
+
+
+
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"> Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to help style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+   
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="sameerguar31@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbyqLRqlQOuJD13anfkbyxuhlS5WH6ASA_W0Fre9/exec">
+      
+      <div class="w3-row ">
+        <div class="w3-half w3-container ">
+          <div class="w3-section">
+            <label>First Name</label>
+            <input class="w3-input w3-border" type="text"  required id="first-name" name="first-name"">
+          </div>
+         
+        </div>
+        <div class="w3-half w3-container">
+          <div class="w3-section">
+            <label>Last Name</label>
+            <input class="w3-input w3-border" type="text"  id="last-name" name="last-name" required >
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row ">
+        <div class="w3-half w3-container ">
+         
+      <div class="w3-section">
+        <label>Phone No.</label>
+        <input class="w3-input w3-border" type="phone"  id="phone" name="phone" required>
+      </div>
+         
+        </div>
+        <div class="w3-half w3-container">
+         
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="email"   id="email" name="email" required>
+      </div>
+
+        </div>
+      </div>
+
+      <div class="w3-row ">
+        <div class="w3-half w3-container ">
+         
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border" type="text" name="Message" name="entry.1336397891" required>
+          </div>
+         
+        </div>
+        <div class="w3-half w3-container">
+         
+          <div class="w3-section">
+            <label>&nbsp;</label>
+
+          <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="thankyou_message" style="display:none;">
+        <h2><em>Thanks</em> for contacting us!
+          We will get back to you soon!</h2>
+      </div>
+     
+    </form>  
+  </div>
+   <!-- Promo Section - "We know design" -->
+   <div class="w3-container w3-light-grey" style="margin-top:75px; padding-right:0%">
+    <div class="w3-row-padding" style="padding-right: 0%;">
+      <div class="w3-col m6">
+        <h3 style="color: #f44336;">We know design.</h3>
+       <p>Our shop S.G. Decoratives was inagurated five years earlier, but we carry generations of wisdom and design knowledge, which goes in our work. We can also guide you for all other<a href="https://www.galaxyenterprises.org" style="text-decoration:none;" target="_blank"> timber products</a> and skilled capranters.</p>
+       
+        <p><img src="images/phone.png" width="25px">&nbsp +91 9811874575  </p>
+        <p><img src="images/mail.png" width="25px">&nbsp Sameergaur31@gmail.com</p>
+       <a href="https://www.google.com/maps?ll=28.681923,77.058784&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=12025413772043789004" target="_blank" style="text-decoration: none;"> <p><img src="images/location.png" width="25px">&nbsp Shop no.118, Main Rohtak Road
+        </p></a>
+        <p style="border-radius: 10px;"><a href="https://wa.me/919212374575?text=I'm%20need%20some%20help." target="_blank" style="border-radius: 10px;" class="w3-button w3-red"><img src="images/whatsapp.png" width="25px" > Quote</a></p>
+      </div>
+      <div class="w3-col m6" style="padding-right: 0%;"> 
+        <img class="w3-image w3-round-large" src="images/own.png" alt="Sameer Gaur" width="70%" style="justify-content: right; float:right; padding-right:0%" title="Sameer Gaur">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-top: 75px;">
+    <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6955.220944780548!2d77.05845630723583!3d28.675275574391218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05eea27e4607%3A0xa6e2da1cbfc2a2cc!2sSG%20Decoratives!5e0!3m2!1sen!2sin!4v1597310076842!5m2!1sen!2sin" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+<!-- End page content -->
+
+<div class="navbar" id="myNavbar" style="width: 100%; z-index:100" >
+  
+  <div class="btn-group" style="width: 100%;" >
+  <button style="width:25%; border-radius:5px 0 0 5px">   <a href="tel:+91 9811874575" > <img src="images/mob/11.png" width="30px"> </a></button>
+    <button style="width:25%"><a href="https://wa.me/919811874575?text=I'm%20need%20some%20help." target="_blank"><img src="images/mob/22.png" width="30px" ></a></button>
+   <button style="width:25%; "><a href="mailto:sameergaur31@gmail.com?subject=Inquery%20regarding%20Product&body=Hi%20Sameer%20Gaur" target="_blank"><img src="images/mob/44.png" width="30px"></a></button>
+   <button style="width:25%; border-radius:0 5px 5px 0"><a href="https://www.google.com/maps/place/SG+Decoratives/@28.681923,77.0587837,15z/data=!4m5!3m4!1s0x0:0xa6e2da1cbfc2a2cc!8m2!3d28.681923!4d77.0587837" target="_blank"><img src="images/mob/33.png" width="30px"></a></button>
+
+  </div>
+  
+    
+  </div>
+
+
+
+<footer class="w3-center w3-black w3-padding-64"  style="margin-top:75px;padding-right:58px">
+ <a class="example"> <p class="w3-right example" style="top: 95%;"><img src="images/sameer.png" class="example" width="100px"></p></a>
+
+  <a href="#showcase" class="w3-button " style="background-color: #f44336;"><i class="fa fa-arrow-up w3-margin-right" style="background-color: #f44336;"></i>To the top</a>
+  
+  <p style="text-align: center; ">Coopyright © 2020 S.G. Decoratives. All Rights Reserved.<br>Powered By Web Rachna</p>
+
+</footer>
+
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Show More"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Show Less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+  <!--scroll indicator-->
+  
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {aFunction()};
+  
+  function aFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
+
+  <script>// Accordions
+    function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }</script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+  <script src="js/app.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

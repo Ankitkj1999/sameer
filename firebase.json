@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "sgdecoratives",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
